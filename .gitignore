@@ -51,7 +51,16 @@
 !.vscode/extensions.json
 *.code-workspace
 
-### O ### 
+### ShellScript ### 
 *.sh
-Roteiro.txt
-TODO.txt
+
+### Text ###
+*.doc
+*.docx
+*.log
+*.msg
+*.pages
+*.rtf
+*.txt
+*.wpd
+*.wps

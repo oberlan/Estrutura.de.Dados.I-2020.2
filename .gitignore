@@ -1,7 +1,3 @@
-Roteiro.txt
-TODO.txt
-
-
 ### C ###
 # Prerequisites
 *.d
@@ -46,3 +42,16 @@ TODO.txt
 *.su
 *.idb
 *.pdb
+
+### vscode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+### O ### 
+*.sh
+Roteiro.txt
+TODO.txt

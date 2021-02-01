@@ -1,15 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef enum{
-    false,
-    true
-} bool;
+#define FALSE 0
+#define TRUE 1
 
 
 int main(int argc, char *argv[]) {
-    bool x;
-    x = true;
+    int x;
+    x = TRUE;
     if (x) {
         printf("OK\n");
     }

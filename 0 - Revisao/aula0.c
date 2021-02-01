@@ -1,20 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct ponto {
-    double  x, y;
-};
-typedef struct ponto Ponto;
+typedef enum{
+    false,
+    true
+} bool;
 
-typedef struct pontoInt {
-    int x, y;
-} PontoInteiro;
 
 int main(int argc, char *argv[]) {
-    struct ponto p;
-    Ponto p1;
-    PontoInteiro pi;
-    scanf("%d %d", &pi.x, &pi.y);
-    printf("%d %d\n", pi.x, pi.y);
+    bool x;
+    x = true;
+    if (x) {
+        printf("OK\n");
+    }
     return 0;
 }

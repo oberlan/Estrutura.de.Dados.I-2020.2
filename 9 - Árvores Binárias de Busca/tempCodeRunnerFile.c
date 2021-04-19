@@ -1,0 +1,1 @@
+raiz = removeNo(raiz, 9);

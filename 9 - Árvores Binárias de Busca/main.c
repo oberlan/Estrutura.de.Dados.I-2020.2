@@ -135,18 +135,28 @@ No *removeNo(No *raiz, int chave) {
     }
     /* Nó tem um único filho à esquerda */
     else if (atual->dir == NULL) {
-        if(pai->esq == atual)
-            pai->esq = atual->esq;
-        else
-            pai->dir = atual->esq;
+        if(atual != raiz){ // ou pai != NULL;
+            if(pai->esq == atual)
+                pai->esq = atual->esq;
+            else
+                pai->dir = atual->esq;
+        }
+        else {
+            raiz = atual->esq;
+        }
         free(atual);
     }
     /* Nó tem um único filho à direita */
     else if (atual->esq == NULL) {
-        if(pai->esq == atual)
-            pai->esq = atual->dir;
-        else
-            pai->dir = atual->dir; 
+        if (atual != raiz) { // ou pai != NULL;
+            if(pai->esq == atual)
+                pai->esq = atual->dir;
+            else
+                pai->dir = atual->dir; 
+        }
+        else {
+            raiz = atual->dir;
+        }
         free(atual);
     }
     /* Nó tem dois filhos */
